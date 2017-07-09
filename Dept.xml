@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.happy.dao.IDeptDAO" >
+    <!--查询所有-->
+    <select id="getAllList" resultType="Dept">
+        SELECT * FROM Dept
+    </select>
+    <!--待条件查询-->
+    <select id="getDeptById" resultType="Dept">
+        SELECT * FROM Dept WHERE  deptNo=#{deptNo}
+    </select>
+
+</mapper>
